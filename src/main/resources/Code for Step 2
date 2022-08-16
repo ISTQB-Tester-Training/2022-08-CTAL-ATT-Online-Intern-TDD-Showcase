@@ -1,0 +1,33 @@
+// In Datei TimePairTest.java
+
+package tddshowcasetestpackage;
+
+import tddshowcasepackage.*;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class TimePairTest {
+
+    TimePair aTimePair = new TimePair();
+
+    @Test
+    public void timeDifferenceTest_1h () {
+        assertEquals(1.0, aTimePair.getTimeDifference("10:00", "11:00"), 0.0);
+    }
+}
+
+// --------------------------------------------
+
+// In Datei TimePair.java
+
+package tddshowcasepackage;
+
+public class TimePair {
+
+    public double getTimeDifference(String strStartTime, String strEndTime) {
+
+        return 1.0;
+    }
+}
+
