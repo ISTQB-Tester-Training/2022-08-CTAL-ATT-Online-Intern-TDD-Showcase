@@ -30,4 +30,3 @@ public class TimePair {
         return 1.0;
     }
 }
-

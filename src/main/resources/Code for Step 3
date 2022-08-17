@@ -12,11 +12,11 @@ public class TimePairTest {
 
     @Test
     public void timeDifferenceTest_1h () {
-        assertEquals(1.0, aTimePair.getTimeDifference("10:00", "11:00"), 1.0);
+        assertEquals(1.0, aTimePair.getTimeDifference("10:00", "11:00"), 0.0);
     }
 
     @Test
     public void timeDifferenceTest_0h () {
-       assertEquals(1.0, aTimePair.getTimeDifference("10:00", "10:00"), 0.0);
+       assertEquals(0.0, aTimePair.getTimeDifference("10:00", "10:00"), 0.0);
     }
 }
